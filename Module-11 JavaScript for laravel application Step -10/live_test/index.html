@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grade Calculator</title>
+    <script>
+      function gradeCalculator(grade) {
+        if (typeof grade !== "number" || grade < 0 || grade > 100) {
+          return "Error: Please enter a valid number between 0 and 100.";
+        }
+
+        if (grade >= 90) {
+          return "A";
+        } else if (grade >= 80) {
+          return "B";
+        } else if (grade >= 70) {
+          return "C";
+        } else if (grade >= 60) {
+          return "D";
+        } else {
+          return "F";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Grade Calculator</h1>
+    <form onsubmit="event.preventDefault(); calculateGrade();">
+      <label for="numericalGrade">Enter your numerical grade (0-100):</label>
+      <input type="number" id="numericalGrade" min="0" max="100" />
+      <button type="submit">Calculate Letter Grade</button>
+    </form>
+    <p id="result"></p>
+    <script>
+      function calculateGrade() {
+        const gradeInput = document.getElementById("numericalGrade");
+        const result = document.getElementById("result");
+        const numericalGrade = parseFloat(gradeInput.value);
+
+        const letterGrade = gradeCalculator(numericalGrade);
+        result.textContent = `Letter Grade: ${letterGrade}`;
+      }
+    </script>
+  </body>
+</html>
