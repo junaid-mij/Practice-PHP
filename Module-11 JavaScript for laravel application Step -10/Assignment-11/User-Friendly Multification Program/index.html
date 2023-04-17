@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Table Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Multiplication Table Generator</h1>
+      <form class="form-inline">
+        <label for="number" class="form-label mr-3">Enter a number:</label>
+        <input type="number" class="form-control mr-3" id="number" step="1" />
+        <button class="btn btn-primary btn-generate">Generate Table</button>
+      </form>
+      <div class="table-container">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Number</th>
+              <th></th>
+              <th>Multiplier</th>
+              <th></th>
+              <th>Product</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
