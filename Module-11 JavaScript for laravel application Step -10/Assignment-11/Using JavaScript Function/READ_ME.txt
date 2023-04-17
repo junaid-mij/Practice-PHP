@@ -13,7 +13,7 @@
 
 6. Navigate to the directory where you saved the "multiplication-table.js" file.
 
-7. Type node multiplication-table.js and press Enter to execute the code.
+7. Type "node multiplication-table.js" and press Enter to execute the code.
 
 
 -->The output will display the multiplication tables for the input numbers specified in the test cases.
