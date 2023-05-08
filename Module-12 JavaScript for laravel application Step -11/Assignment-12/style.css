@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+        rgba(254, 92, 56, 0.49),
+        rgba(255, 186, 59, 0.506)
+      )
+      0 0 / cover,
+    url("image/measure.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 60px;
+  width: 400px;
+}
+
+form h1 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+input[type="number"] {
+  width: 93%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  width: 98%;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#resultDiv {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
