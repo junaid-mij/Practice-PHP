@@ -37,3 +37,7 @@ https://your-netlify-url-here.com
 ## Conclusion
 
 This simple web application demonstrates how to build a BMI calculator using JavaScript and deploy it to Netlify. The code can be easily customized to add more features or improve the design.
+
+## Author
+
+->Marajul Islam (Junaid-MIJ)
