@@ -6,7 +6,7 @@ This is a simple web application that allows users to calculate their Body Mass 
 
 To use the BMI calculator, you can simply visit the following URL:
 
-https://your-netlify-url-here.com
+https://resonant-platypus-108146.netlify.app/
 
 ## Features
 
