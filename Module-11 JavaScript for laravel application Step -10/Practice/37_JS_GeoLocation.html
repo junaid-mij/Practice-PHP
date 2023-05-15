@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+      navigator.geolocation.getCurrentPosition(function (position) {
+        let altitude = position.coords.altitude;
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let speed = position.coords.speed;
+
+        document.write("altitude- " + altitude + "<br>");
+        document.write("latitude- " + latitude + "<br>");
+        document.write("longitude- " + longitude + "<br>");
+        document.write("speed- " + speed + "<br>");
+      });
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

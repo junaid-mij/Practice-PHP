@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+</head>
+
+<body>
+    <!-- Content Start from here -->
+
+    <!-- Manipulate By ID -->
+    <h1 id="MyID"></h1>
+    <br />
+    <!-- Manipulate By Class -->
+    <h1 class="MyClass">This is heading!</h1>
+    <p class="MyClass">This is paragraph!</p>
+    <button class="MyClass">This is Button!</button>
+    <br />
+    <!-- Manipulate By Name -->
+    <h1 name="MyName">This is heading!</h1>
+    <p name="MyName">This is paragraph!</p>
+    <button name="MyName">This is Button!</button>
+    <br />
+    <!-- Manipulate By TagName -->
+    <h1>This is heading!</h1>
+    <p>This is paragraph!</p>
+    <button>This is Button!</button>
+
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        //DOM Manipulation:
+        //Manipulate By ID:
+        var MyElement = document.getElementById("MyID");
+        MyElement.innerHTML = "Hey Junaid";
+        //Manipulate By Class:
+        var MyElements = document.getElementsByClassName("MyClass");
+        MyElements[1].innerHTML = "This paragraph Manupulated!";
+        //Manipulate By Name:
+        var MyElements = document.getElementsByName("MyName");
+        MyElements[2].innerHTML = "This Button Manupulated!";
+        //Manipulate By TagName:
+        var myElements = document.getElementsByTagName('h1');
+        myElements[3].innerHTML = "This heading Manipulated!";
+    </script>
+    <!-- Script End -->
+</body>
+
+</html>

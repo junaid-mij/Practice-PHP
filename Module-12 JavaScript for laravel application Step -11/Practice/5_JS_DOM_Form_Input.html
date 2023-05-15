@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <!-- Sum of two numbers -->
+    <input id="num1" type="number"><br><br>
+    <input id="num2" type="number"><br><br>
+    <button onclick="AddTwo()">ADD</button>
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        function AddTwo(){
+            let x = document.getElementById("num1").value;
+            let y = document.getElementById("num2").value;
+            let r = parseFloat(x)+parseFloat(y);
+            alert(r);
+        }
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

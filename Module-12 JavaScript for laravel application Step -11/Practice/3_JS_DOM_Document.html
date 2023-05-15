@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <!-- Show Cookie -->
+    <p></p>
+    <button onclick="CheckCookie()">Show Cookie</button>
+    <br>
+    <!-- Show Domain -->
+    <p></p>
+    <button onclick="CheckDomain()">Show Domain</button>
+    <br>
+    <!-- Show Last Modified -->
+    <p></p>
+    <button onclick="CheckModified()">Show Last Modified</button>
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        //show cookie:
+        function CheckCookie(){
+            var info = document.cookie;
+            document.getElementsByTagName('p')[0].innerHTML=info;
+        }
+        //show domains:
+        function CheckDomain(){
+            var info = document.domain;
+            document.getElementsByTagName('p')[1].innerHTML=info;
+        }
+        //show last modified:
+        function CheckModified(){
+            var info = document.lastModified;
+            document.getElementsByTagName('p')[2].innerHTML=info;
+        }
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

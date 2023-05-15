@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <!-- Get Title-->
+    <h1 id="title"></h1>
+    <!-- Get URL -->
+    <h2 id="url"></h2>
+    <!-- Replace Document -->
+    <h3>Click the button to replace this document with new content!</h3>
+    <button onclick="replace()">Try It!!</button>
+    <!-- Open new window & new content -->
+    <h4>Click the button to open a new window and add some content!</h4>
+    <button onclick="NewWindow()">Try It!!</button>
+    <!-- Show how many elements tag -->
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p id="element"></p>
+    <input type="button" onclick="showElements()" value="How many elements tag">
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        //get title:
+        document.getElementById("title").innerHTML="The title of this document is: "+document.title;
+        //get url:
+        document.getElementById("url").innerHTML="The URL of this document is: "+document.URL;
+        //replace document:
+        function replace(){
+            document.open("text/html","replace");
+            document.write("<h3>The document has been replaced with new content!!</h3>");
+            document.close();
+        }
+        //new window and add content:
+        function NewWindow(){
+            var w= window.open();
+            w.document.open();
+            w.document.write("<h4>This a new window with new content!!</h4>");
+            w.document.close();
+        }
+        //Show how many elements tag:
+        function showElements(){
+          var x = document.getElementsByTagName("p");
+          document.getElementById("element").innerHTML = x.length;
+        }
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

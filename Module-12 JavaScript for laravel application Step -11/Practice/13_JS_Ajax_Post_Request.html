@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <center>
+        <button onclick="FetchPostData()">POST Data</button>
+    </center>
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        function FetchPostData(){
+            var url = "https://crud.teamrabbil.com/api/v1/CreateProduct";
+            var data = { Img:"A", ProductCode:"B", ProductName:"C", Qty:"D", TotalPrice:"E", UnitPrice:"F" }
+            var requestOptions = {
+                method: 'POST',
+                headers: {'Accept':'application/json','Content-Type':'application/json'},
+                body: JSON.stringify(data)
+            };
+
+            fetch(url, requestOptions)
+            .then(respone => response.jason())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+        }
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

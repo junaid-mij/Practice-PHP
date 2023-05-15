@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <center>
+      <button onclick="objAlert()">Clice</button>
+      <br />
+      <br />
+      <button onclick="objConfirm()">Clice</button>
+      <br />
+      <br />
+      <button onclick="objPrompt()">Clice</button>
+      <br />
+      <br />
+      <button onclick="objOpen()">Clice</button>
+      <br />
+      <br />
+      <button onclick="objClose()">Clice</button>
+    </center>
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+      function objAlert() {
+        alert("Save Success");
+      }
+      function objConfirm() {
+        let resutl = confirm("Do you want to delete!!");
+        document.write(resutl);
+      }
+      function objPrompt() {
+        let resutl = prompt("Write your name:");
+        document.write(resutl);
+      }
+      function objOpen() {
+        open();
+      }
+      function objClose() {
+        close();
+      }
+
+      setTimeout(function () {
+        alert("Hello There");
+      }, 10000);
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

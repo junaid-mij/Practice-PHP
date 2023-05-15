@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+  </head>
+  <body>
+    <!-- Content Start from here -->
+    <center>
+        <img id="image" src="https://image.lexica.art/full_jpg/e4c50d46-2f28-49eb-aa80-71743d45b8d3" alt="omg" height="550px" width="400px">
+        <br><br>
+        <button onclick="ChangeSrc()">Change Src</button>
+        <button onclick="ChangeWidth()">Change Width</button>
+        <button onclick="ChangeHeight()">Change Height</button>
+    </center>
+    <!-- Content End -->
+
+    <!-- Script Strat from here -->
+    <script>
+        function ChangeSrc(){
+            var image = document.getElementById("image");
+            image.src="https://i.etsystatic.com/12811562/r/il/8ecf17/3011861440/il_570xN.3011861440_pfmm.jpg";
+        }
+        function ChangeWidth(){
+            var image = document.getElementById("image");
+            image.width="500";
+        }
+        function ChangeHeight(){
+            var image = document.getElementById("image");
+            image.height="650";
+        }
+    </script>
+    <!-- Script End -->
+  </body>
+</html>
